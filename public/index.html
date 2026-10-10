@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Notes Lab</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Secure Notes Lab</h1>
+            <p>OWASP Web Application Security Project</p>
+        </header>
+
+        <p id="message" class="message" role="status"
+           aria-live="polite"></p>
+
+        <section id="auth-section">
+            <div class="card">
+                <h2>Login</h2>
+
+                <form id="login-form">
+                    <label for="login-username">Username</label>
+                    <input id="login-username"
+                           type="text" required>
+
+                    <label for="login-password">Password</label>
+                    <input id="login-password"
+                           type="password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h2>Register</h2>
+
+                <form id="register-form">
+                    <label for="register-username">Username</label>
+                    <input id="register-username"
+                           type="text" minlength="3"
+                           maxlength="30" required>
+
+                    <label for="register-password">Password</label>
+                    <input id="register-password"
+                           type="password" minlength="12"
+                           required>
+
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="notes-section" hidden>
+            <div class="toolbar">
+                <h2>My Private Notes</h2>
+                <button id="logout-button"
+                        class="secondary">Logout</button>
+            </div>
+
+            <div class="card">
+                <h3 id="form-title">Create a Note</h3>
+
+                <form id="note-form">
+                    <label for="note-title">Title</label>
+                    <input id="note-title" type="text"
+                           maxlength="100" required>
+
+                    <label for="note-content">Content</label>
+                    <textarea id="note-content" rows="5"
+                              maxlength="5000"></textarea>
+
+                    <button id="save-button" type="submit">
+                        Save Note
+                    </button>
+
+                    <button id="cancel-button" type="button"
+                            class="secondary" hidden>
+                        Cancel Edit
+                    </button>
+                </form>
+            </div>
+
+            <h3>Your Notes</h3>
+            <div id="notes-list"></div>
+        </section>
+
+        <footer>
+            Local cybersecurity environment
+        </footer>
+    </main>
+</body>
+</html>
