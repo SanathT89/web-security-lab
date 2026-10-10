@@ -106,7 +106,7 @@ or dynamic SQL statements are introduced.
 
 ## Limitations
 
-This assessment covers one SQL injection payload
+This assessment covers two SQL injection payload
 against the GET /api/notes/:id endpoint.
 
 Additional payloads, input parameters, and endpoints

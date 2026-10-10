@@ -260,7 +260,7 @@ web-security-lab/
 
 ## Security Limitations
 
-This project is an testing laboratory and is not intended for production deployment.
+This project is a testing laboratory and is not intended for production deployment.
 
 The assessment does not comprehensively cover every OWASP Top 10 category, injection technique, XSS context, CSRF scenario, dependency vulnerability, or production security requirement.
 

@@ -70,6 +70,9 @@ returning the note.
 
 ## Limitations
 
-This test examines one note retrieval endpoint.
-Additional testing is needed for updating,
-deleting, and other access control scenarios.
+This assessment covers one unauthorized note retrieval
+scenario using two controlled test accounts.
+
+PUT and DELETE authorization tests are documented
+separately. Other authorization scenarios and
+potential bypasses remain outside this test's scope.

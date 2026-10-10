@@ -132,7 +132,7 @@ app.post("/api/logout", requireAuth, (req, res, next) => {
     req.session.destroy((err) => {
         if (err) return next(err);
 
-        res.clearCookie("notes.sid");
+        res.clearCookie("notes.lab.sid");
 
         res.json({
             message: "Logged out successfully"
